@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@android:id/background"><!-- 没有进度的背景色 -->
+        <shape>
+            <corners android:radius="0dip" /><!-- 为两头圆角的弧度，值越大越圆 -->
+            <gradient
+                android:angle="0"
+                android:centerColor="@color/txt_secondary_title"
+                android:centerY="0.75"
+                android:endColor="@color/txt_secondary_title"
+                android:startColor="@color/txt_secondary_title" />
+        </shape>
+    </item>
+    <item android:id="@android:id/secondaryProgress"><!-- 下载进度的背景色 -->
+        <clip>
+            <shape>
+                <corners android:radius="0dip" />
+
+                <gradient
+                    android:angle="0"
+                    android:centerColor="@color/bg_red"
+                    android:centerY="0.75"
+                    android:endColor="@color/bg_red"
+                    android:startColor="@color/bg_red" />
+            </shape>
+        </clip>
+    </item>
+</layer-list>

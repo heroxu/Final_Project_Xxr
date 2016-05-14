@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/buyer_bottom_li"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x168"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_banner_all"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_img_buy"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/buy_press" />
+
+        <ImageView
+            android:id="@+id/main_img_noti"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/noti_no_press" />
+
+        <ImageView
+            android:id="@+id/main_img_showbill"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/show_bill_no_press" />
+
+        <ImageView
+            android:id="@+id/main_img_cart"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/cart_no_press"  />
+
+        <ImageView
+            android:id="@+id/main_img_person"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/person_no_press" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buyer_bottom_li"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+</RelativeLayout>
+
+
+
